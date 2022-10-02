@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+body{
+  background-color: #1A1B1E;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#greeting{
+  width: 40%;
+  height: 100vh;
+  float: left;
+  padding: 180px 0 0 180px;
+}
+
+#greeting h1{
+  text-align: left;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 60px;
+}
+#greeting .icons{
+  padding-top: 30px;
+}
+#greeting .icons svg{
+  float: left;
+}
+#greeting .icons .github{
+  width: 40px;
+  height: auto;
+}
+#greeting .icons .mail{
+  width: 38px;
+  height: auto;
+  padding-top: 10px;
+  margin: 0 26px;
+}
+
+#category{
+  width: 60%;
+  height: 100vh;
+  float: right;
+  padding: 120px 0 120px 160px;
+}
+
+#category .category__box{
+  width: 240px;
+  height: 236px;
+  border-radius: 95px;
+  float: left;
+  margin: 20px;
+  position: relative;  
+}
+
+#category .category__box:nth-child(1){
+  background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
+  top: 80px;
+}
+#category .category__box:nth-child(2){
+  background-image: linear-gradient( -83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+}
+#category .category__box:nth-child(3){
+  background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
+  clear: both;
+  top: 80px;
+}
+#category .category__box:nth-child(4){
+  background-image: linear-gradient( -109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
+}
+
+#category .category__box p{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 60px;
+}
