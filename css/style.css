@@ -9,7 +9,7 @@ body{
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 138px;
+  top: 118px;
   left: 180px;
   z-index: 100;
   display: none;
@@ -43,8 +43,8 @@ i.arrow-white {
 }
 #greeting .icons{padding-top: 30px;}
 #greeting .icons svg{float: left;}
-#greeting .icons .github{width: 40px; height: auto;}
-#greeting .icons .mail{
+#greeting .github{width: 40px; height: auto;}
+#greeting .mail{
   width: 38px;
   height: auto;
   padding-top: 10px;
@@ -100,62 +100,62 @@ i.arrow-white {
   padding-left: 64px;
 }
 
-#about { display: none; padding: 120px 160px 0;}
+#about {
+  display: none;
+  padding: 100px 160px 0;
+}
 #about .about__box-bar{
   background-image: linear-gradient( 109.6deg,  rgba(62,161,219,1) 11.2%, rgba(93,52,236,1) 100.2% );
 }
-
 #about .about__box-bar p{
   font-size: 20px;
   font-weight: 500;
   color: #fff;
   line-height: 64px;
 }
-
 #about .about__box{
-  width: 50%;
-  padding: 70px 26px;
+  width: 100%;
+  margin: 40px 0 30px;
+  padding: 0 26px;
   float: left;
 }
-
-#about .about__box p{font-size: 18px; color: #fff;}
-#about .about__box .about__box-work{}
+#about .about__box p{
+  font-size: 18px;
+  color: #fff;
+  line-height: 28px;
+}
 #about .about__box h3{
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   color: #fff;
   margin-bottom: 26px;
 }
-
-#about .about__box .about__box-work p{
+#about .about__box-work{
+  width: 50%;
+  float: left;
+}
+#about .about__box-work p{
   font-size: 18px;
   font-weight: 400;
   color: #fff;
   margin: 10px 0;
 }
-
-#about .about__box .about__box-skills{ margin: 120px 0;}
-#about .about__box .about__box-skills h4{
-  font-size: 22px;
-  font-weight: 500;
-  color: #fff;
-  margin: 40px 0 20px 0;
-}
-
-#about .about__box .about__box-skills ul{}
-#about .about__box .about__box-skills ul li{
+#about .about__box-work span{ color: rgb(109, 192, 240); cursor: pointer; }
+#about .about__box-work span:hover{ text-decoration: underline; }
+#about .about__box-skills{ width: 50%; float: left; }
+#about .about__box-skills ul li{
   float: left;
   border: 1px solid #fff;
   border-radius: 6px;
   padding: 8px 10px;
   margin: 0 6px 6px 0;
 }
-#about .about__box .about__box-skills ul li svg{
+#about .about__box-skills ul li svg{
   width: 18px;
   height: auto;
   float: left;
 }
-#about .about__box .about__box-skills ul li p{
+#about .about__box-skills ul li p{
   font-size: 15px;
   font-weight: 200;
   float: left;
@@ -163,12 +163,21 @@ i.arrow-white {
   padding-left: 8px;
 }
 
-#about .about__box .about__box-skills .about__box-skills-tools{
+#about .about__box-skills-tools{
   clear: both;
   margin-top: 100px;
 }
+#about .about__box-skills-tools h3{
+  margin: 40px 0 26px 0;
+}
+#about li{
+  cursor: pointer;
+}
 
-#design {display: none; padding: 120px 160px 0;}
+#design{
+  display: none;
+  padding: 100px 160px 0;
+}
 #design .design-bar{
   background-image: linear-gradient( -83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
 }
@@ -178,13 +187,11 @@ i.arrow-white {
   color: #fff;
   line-height: 64px;
 }
-
 #design ul {
   width: 100%;
   height: auto;
   padding-top: 100px;
 }
-
 #design ul li {
   width: 33.3%;
   padding: 12px;
@@ -210,7 +217,6 @@ i.arrow-white {
   font-weight: 100;
   color: #fff;
 }
-
 #design ul li:nth-child(1) a {
   background-image: url(../src/design/01.jpg);
   background-position: center bottom;
@@ -236,8 +242,10 @@ i.arrow-white {
   background-position: center 20%;
 }
 
-#projects {display: none; padding: 120px 160px 0;}
-
+#projects{
+  display: none;
+  padding: 100px 160px 0;
+}
 #projects .projects-bar{
   background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );
 }
@@ -312,7 +320,6 @@ i.arrow-white {
   color: #fff;
   display: none;
 }
-
 #contact .contact__image{
   margin: 180px auto 0;
   width: 320px;
@@ -323,21 +330,18 @@ i.arrow-white {
   background-size: cover;
   background-position: 0 66%;
 }
-
 #contact h3 {
   font-size: 50px;
   font-weight: 600;
   margin-top: 60px;
 }
-
 #contact .contact__info{
   margin: 30px 0;
   font-size: 18px;
   font-weight: 100;
   line-height: 30px;
 }
-
-#contact .contact__info p.copyright{
+#contact .contact__info p.copyright{ 
   margin: 20px 0;
 }
 
