@@ -3,6 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
   background-color: #21202D;
+  min-width: 320px;
 }
 
 .eng {
@@ -23,6 +24,7 @@ body {
   font-weight: 700;
   line-height: 72px;
   color: #fff;
+  word-break: keep-all;
 }
 
 #main #greeting h1 span {
@@ -90,8 +92,8 @@ body {
   display: inline-block;
   vertical-align: middle;
   background-repeat: no-repeat;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
 }
 
 #menuBar #back i.arrow-white {
@@ -144,13 +146,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 3;
 }
 
 #about .about__box {
   width: 100%;
   clear: both;
   padding: 40px 20px 0;
+  word-break: keep-all;
 }
 
 #about .about__box p {
@@ -161,7 +164,8 @@ body {
 }
 
 #about .about__box p span {
-  font-weight: 600;
+  font-weight: 500;
+  color: #EEAF5E;
 }
 
 #about .about__box-work {
@@ -184,7 +188,7 @@ body {
 }
 
 #about .about__box-work p span {
-  color: #21202D;
+  color: #7386C2;
   font-weight: 600;
   cursor: pointer;
 }
@@ -372,7 +376,7 @@ body {
 }
 
 #projects ul li .info h2 {
-  color: #21202D;
+  color: #fff;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 16px;
@@ -380,7 +384,7 @@ body {
 
 #projects ul li .info .info__box p {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 26px;
 }
 
@@ -459,5 +463,138 @@ body {
 
 #contact .contact__info p.copyright {
   margin: 20px 0;
+}
+
+@media (min-width: 758px) and (max-width: 1023px) {
+  #main {
+    padding: 10% 5%;
+  }
+  #main #menu {
+    top: 80px;
+  }
+  #main #menu .menuBox {
+    width: 40%;
+  }
+  #main #menu .menuBox:nth-child(3) {
+    position: relative;
+    left: 140px;
+  }
+  #main #menu .menuBox:nth-child(4) {
+    position: relative;
+    left: 170px;
+  }
+  #about {
+    padding: 10% 5%;
+  }
+  #about .about__box .about__box-work {
+    margin-top: 50px;
+    padding-right: 18px;
+  }
+  #about .about__box .about__box-skills {
+    margin-top: 50px;
+  }
+  #design {
+    padding: 10% 5%;
+  }
+  #design ul li {
+    width: 50%;
+  }
+  #projects {
+    padding: 10% 5%;
+  }
+  #projects ul li {
+    margin-bottom: 46px;
+  }
+  #projects ul li a {
+    width: 100%;
+  }
+  #projects ul li .info {
+    width: 100%;
+    margin: 0 auto;
+    padding: 42px 0 0;
+    text-align: center;
+  }
+  #projects ul li .info h2 {
+    font-size: 24px;
+  }
+  #projects ul li .info button {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  #main {
+    padding: 10% 5%;
+  }
+  #main #greeting h1 {
+    font-size: 42px;
+    line-height: 54px;
+  }
+  #main #greeting .icons svg {
+    width: 36px;
+  }
+  #main #menu {
+    top: 50px;
+  }
+  #main #menu .menuBox {
+    width: 50%;
+  }
+  #main #menu .menuBox p {
+    font-size: 26px;
+    right: 0;
+    bottom: 50px;
+  }
+  #about {
+    padding: 10% 5%;
+  }
+  #about .about__box {
+    padding: 40px 4px 0;
+  }
+  #about .about__box p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #about .about__box .about__box-work {
+    width: 100%;
+    margin-top: 50px;
+  }
+  #about .about__box .about__box-skills {
+    width: 100%;
+    margin-top: 50px;
+  }
+  #design {
+    padding: 10% 5% 0;
+  }
+  #design ul li {
+    width: 100%;
+  }
+  #projects {
+    padding: 7% 5%;
+  }
+  #projects ul li {
+    margin-bottom: 46px;
+  }
+  #projects ul li a {
+    width: 100%;
+  }
+  #projects ul li .info {
+    width: 100%;
+    margin: 0 auto;
+    padding: 42px 0 0;
+    text-align: center;
+  }
+  #projects ul li .info .info__box p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #projects ul li .info h2 {
+    font-size: 20px;
+  }
+  #projects ul li .info button {
+    margin-top: 20px;
+  }
+  #contact {
+    padding: 7% 5%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

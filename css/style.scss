@@ -1,10 +1,11 @@
-@import './variables';
+@import './mixin';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
   background-color: $bg-navy;
+  min-width: 320px;
 }
 
 
@@ -31,6 +32,7 @@ body {
       font-weight: 700;
       line-height: 72px;
       color: #fff;
+      word-break: keep-all;
 
       span {
         color: $green;
@@ -104,8 +106,8 @@ body {
       display: inline-block;
       vertical-align: middle;
       background-repeat: no-repeat;
-      width: 34px;
-      height: 34px;
+      width: 36px;
+      height: 36px;
 
       &.arrow-white {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg stroke-width='2' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 12H6M6 12L12 6M6 12L12 18' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -155,12 +157,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 3;
 
   .about__box {
     width: 100%;
     clear: both;
     padding: 40px 20px 0;
+    word-break: keep-all;
 
     p{
       font-size: 18px;
@@ -169,7 +172,8 @@ body {
       line-height: 25px;
 
       span{
-        font-weight: 600;
+        font-weight: 500;
+        color: $orange;
       }
     }
   }
@@ -191,7 +195,7 @@ body {
       margin: 4px 0;
 
       span {
-        color: $bg-navy;
+        color: $lavender;
         font-weight: 600;
         cursor: pointer;
       }
@@ -382,7 +386,7 @@ body {
         color: #fff;
 
         h2 {
-          color: $bg-navy;
+          color: #fff;
           font-size: 20px;
           font-weight: 600;
           margin-bottom: 16px;
@@ -391,7 +395,7 @@ body {
         .info__box{
           p {
             font-size: 18px;
-            font-weight: 400;
+            font-weight: 300;
             line-height: 26px;
           }
         }
@@ -475,3 +479,186 @@ body {
     }
   }
 }
+
+
+@include tablet{
+
+  #main{
+    padding: 10% 5%;
+
+    #menu{
+      top: 80px;
+
+      .menuBox{
+        width: 40%;
+
+        &:nth-child(3){
+          position: relative;
+          left: 140px;
+        }
+        &:nth-child(4){
+          position: relative;
+          left: 170px;
+        }
+      }
+    }
+  }
+
+  #about{
+    padding: 10% 5%;
+
+    .about__box{
+      .about__box-work{
+        margin-top: 50px;
+        padding-right: 18px;
+      }
+      .about__box-skills{
+        margin-top: 50px;
+      }
+    }
+  }
+
+  #design{
+    padding: 10% 5%;
+
+    ul{
+      li {
+        width: 50%;      
+      }
+    }
+  }
+
+  #projects{
+    padding: 10% 5%;
+
+    ul{
+      li{
+        margin-bottom: 46px;
+
+        a{
+          width: 100%;
+        }
+        .info{
+          width: 100%;
+          margin: 0 auto;
+          padding: 42px 0 0;
+          text-align: center;
+
+          h2{
+            font-size: 24px;
+          }
+
+          button{
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+@include mobile{
+  
+  #main{
+    padding: 10% 5%;
+
+    #greeting{
+      h1{
+        font-size: 42px;
+        line-height: 54px;
+      }
+
+      .icons{
+        svg{
+          width: 36px;
+        }
+      }
+    }
+
+    #menu{
+      top: 50px;
+
+      .menuBox{
+        width: 50%;
+
+        p{
+          font-size: 26px;
+          right: 0;
+          bottom: 50px;
+        }
+      }
+    }
+  }
+
+  #about{
+    padding: 10% 5%;
+
+    .about__box{
+      padding: 40px 4px 0;
+
+      p{
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .about__box-work{
+        width: 100%;
+        margin-top: 50px;
+      }
+      .about__box-skills{
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  #design{
+    padding: 10% 5% 0;
+
+    ul{
+      li {
+        width: 100%;      
+      }
+    }
+  }
+
+  #projects{
+    padding: 7% 5%;
+
+    ul{
+      li{
+        margin-bottom: 46px;
+
+        a{
+          width: 100%;
+        }
+        .info{
+          width: 100%;
+          margin: 0 auto;
+          padding: 42px 0 0;
+          text-align: center;
+
+          .info__box{
+            p{
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+          h2{
+            font-size: 20px;
+          }
+
+          button{
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #contact{
+    padding: 7% 5%;
+  }
+}
+
