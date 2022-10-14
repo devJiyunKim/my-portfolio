@@ -1,0 +1,477 @@
+@import './variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: $bg-navy;
+}
+
+
+
+.eng{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+// 메인 페이지
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: $bg-navy;
+  padding: 7% 10%;
+  font-family: 'Noto Sans KR', sans-serif;
+  position: relative;
+
+  #greeting {
+
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 72px;
+      color: #fff;
+
+      span {
+        color: $green;
+      }
+    }
+
+    .icons {
+      width: 100%;
+      margin-top: 24px;
+
+      svg {
+        width: 38px;
+
+        &.mail {
+          padding: 0 0 5px 16px;
+        }
+      }
+    }
+  }
+
+  #menu {
+    position: relative;
+    top: 120px;
+
+    .menuBox {
+      width: 25%;
+      float: left;
+      position: relative;
+      cursor: pointer;
+
+      p {
+        color: #fff;
+        opacity: .4;
+        font-size: 32px;
+        font-weight: 600;
+        position: relative;
+        right: 8px;
+        bottom: 80px;
+        z-index: 2;
+      }
+
+      svg {
+        position: relative;
+      }
+
+      &:hover {
+
+        p {
+          font-weight: 900;
+          opacity: 1;
+        }
+
+      }
+    }
+  }
+}
+
+// 공통 : 뒤로 가기
+#menuBar {
+  width: 100%;
+
+  // 공통 : 뒤로 가기
+  #back {
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    display: none;
+    float: left;
+
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      width: 34px;
+      height: 34px;
+
+      &.arrow-white {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg stroke-width='2' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 12H6M6 12L12 6M6 12L12 18' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      }
+      &.arrow-lavender{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg stroke-width='2' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 12H6M6 12L12 6M6 12L12 18' stroke='%237386C2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      }
+      &.arrow-orange{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg stroke-width='2' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 12H6M6 12L12 6M6 12L12 18' stroke='%23EEAF5E' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      }
+      &.arrow-pink{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg stroke-width='2' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 12H6M6 12L12 6M6 12L12 18' stroke='%23F39DC0' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      }
+      &.arrow-green{
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg stroke-width='2' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5 12H6M6 12L12 6M6 12L12 18' stroke='%23009886' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      }
+    }
+  }
+
+  p {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 37px;
+    float: left;
+
+    &.title-about{
+      color: $lavender;
+    }
+    &.title-design{
+      color: $orange;
+    }
+    &.title-project{
+      color: $pink;
+    }
+  }
+}
+
+// About me 페이지
+#about {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: $bg-navy;
+  padding: 7% 10%;
+  font-family: 'Noto Sans KR', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  .about__box {
+    width: 100%;
+    clear: both;
+    padding: 40px 20px 0;
+
+    p{
+      font-size: 18px;
+      font-weight: 100;
+      color: #fff;
+      line-height: 25px;
+
+      span{
+        font-weight: 600;
+      }
+    }
+  }
+
+  .about__box-work {
+    width: 50%;
+    float: left;
+
+    h3 {
+      font-size: 26px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 26px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #fff;
+      margin: 4px 0;
+
+      span {
+        color: $bg-navy;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .about__box-skills {
+    width: 50%;
+    float: left;
+
+    ul{
+      li {
+        float: left;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        padding: 8px 10px;
+        margin: 0 6px 6px 0;
+        cursor: pointer;
+
+        svg {
+          width: 18px;
+          height: auto;
+          float: left;
+        }
+
+        p {
+          font-size: 15px;
+          font-weight: 400;
+          float: left;
+          line-height: 16px;
+          padding-left: 8px;
+        }
+      }
+    }
+
+    .about__box-skills-lang {
+      width: 100%;
+      height: auto;
+      
+      h3 {
+        font-size: 26px;
+        font-weight: 600;
+        color: #fff;
+        margin: 0 0 20px;
+      }
+    }
+
+    .about__box-skills-tools {
+      width: 100%;
+      height: auto;
+      clear: both;
+      padding-top: 26px;
+    
+      h3 {
+        font-size: 26px;
+        font-weight: 600;
+        color: #fff;
+        margin: 0 0 20px;
+      }
+    }
+    
+  }
+}
+
+// Design 페이지
+#design{
+  display: none;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 160px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  ul {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+
+    li {
+      width: 33.3%;
+      padding: 12px;
+      margin-bottom: 10px;
+      float: left;
+
+      &:nth-child(1) a{
+        background-image: url(../src/design/01.jpg);
+        background-position: center bottom;
+      }
+      &:nth-child(2) a{
+        background-image: url(../src/design/02.jpg);
+        background-position: center top;
+      }
+      &:nth-child(3) a{
+        background-image: url(../src/design/03.jpg);
+        background-position: center top;
+      }
+      &:nth-child(4) a{
+        background-image: url(../src/design/04.jpg);
+        background-position: center 3%;
+      }
+      &:nth-child(5) a{
+        background-image: url(../src/design/05.jpg);
+        background-position: center top;
+      }
+      &:nth-child(6) a{
+        background-image: url(../src/design/06.jpg);
+        background-position: center 20%;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        border: 1px solid #eee;
+        background-size: cover;
+      }
+
+      h2 {
+        color: $orange;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 16px 0 8px;
+      }
+
+      p{
+        font-size: 16px;
+        font-weight: 100;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Projects 페이지
+#projects{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 100px 160px 0;
+  z-index: 5;
+
+  ul{
+    width: 100%;
+    height: auto; 
+    padding-top: 100px;
+
+    li {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      float: left;
+
+      &:nth-child(1){
+        a {
+          background-image: url("../src/projects/leaders.png");
+          background-position: center 35%;
+        }
+      } 
+
+      &:nth-child(2){
+        a {
+          background-image: url("../src/projects/philips.png");
+          background-position: center 0;
+        }
+      } 
+
+      a {
+        display: block;
+        width: 45%;
+        height: 200px;
+        border-radius: 5px;
+        border: 1px solid #fff;
+        background-size: cover;
+        float: left;
+      }
+
+      .info {
+        width: 55%;
+        height: auto;
+        float: left;
+        padding: 6px 50px;
+        color: #fff;
+
+        h2 {
+          color: $bg-navy;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 16px;
+        }
+
+        .info__box{
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+          }
+        }
+
+        button {
+          margin-top: 36px;
+          padding: 12px 60px;
+          border-radius: 3px;
+          border: none;
+          background-color: $pink;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 300;
+          cursor: pointer;
+          transition: all .3 ease-in-out;
+
+          &:hover {
+            color: $bg-navy;
+            font-weight: 700;
+          }
+
+          a{
+            background-image: none;
+            height: auto;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+#contact{
+  display: none;
+  width: 100%;
+  height: 100vh;
+  padding: 7% 10%;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  z-index: 5;
+
+
+  .imgimg{
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    background-image: url(../src/contact/profile.jpg);
+  }
+
+  .contact__image{
+    margin: 100px auto 0;
+    width: 320px;
+    height: 320px;
+    border-radius: 126px;
+    background-image: url(../src/contact/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 66%;
+    box-shadow: 10px 5px 0px $green;
+  }
+
+  h3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 60px;
+    color: $green;
+  }
+
+  .contact__info{
+    margin: 30px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+
+    p.copyright{ 
+      margin: 20px 0;
+    }
+  }
+}
