@@ -73,18 +73,22 @@ body {
 
 #main #menu .menuBox svg#blobSvg_about {
   display: block;
+  overflow: auto;
 }
 
 #main #menu .menuBox svg#blobSvg_design {
   display: block;
+  overflow: auto;
 }
 
 #main #menu .menuBox svg#blobSvg_projects {
   display: block;
+  overflow: auto;
 }
 
 #main #menu .menuBox svg#blobSvg_contact {
   display: block;
+  overflow: auto;
 }
 
 #main #menu .menuBox:hover p {
