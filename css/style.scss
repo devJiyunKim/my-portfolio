@@ -76,6 +76,22 @@ body {
 
       svg {
         position: relative;
+        
+        &#blobSvg_about{
+          display: block;
+        }
+
+        &#blobSvg_design{
+          display: block;
+        }
+
+        &#blobSvg_projects{
+          display: block;
+        }
+
+        &#blobSvg_contact{
+          display: block;
+        }
       }
 
       &:hover {

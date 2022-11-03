@@ -71,6 +71,22 @@ body {
   position: relative;
 }
 
+#main #menu .menuBox svg#blobSvg_about {
+  display: block;
+}
+
+#main #menu .menuBox svg#blobSvg_design {
+  display: block;
+}
+
+#main #menu .menuBox svg#blobSvg_projects {
+  display: block;
+}
+
+#main #menu .menuBox svg#blobSvg_contact {
+  display: block;
+}
+
 #main #menu .menuBox:hover p {
   font-weight: 900;
   opacity: 1;
