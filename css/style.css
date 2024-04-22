@@ -2,13 +2,15 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-family: 'Noto Sans KR', sans-serif;
-  background-color: #21202D;
+  background-color: #202028;
   min-width: 320px;
 }
 
 .eng {
   font-family: 'Montserrat', sans-serif;
 }
+
+.mb{margin-bottom: 16px !important;}
 
 #main {
   width: 100%;
@@ -288,32 +290,47 @@ body {
 }
 
 #design ul li:nth-child(1) a {
-  background-image: url(../src/design/01.jpg);
-  background-position: center bottom;
+  background-image: url(../src/design/map_nation.jpg);
+  background-position: center center;
 }
 
 #design ul li:nth-child(2) a {
-  background-image: url(../src/design/02.jpg);
+  background-image: url(../src/design/dm-setlist.jpg);
   background-position: center top;
 }
 
 #design ul li:nth-child(3) a {
-  background-image: url(../src/design/03.jpg);
+  background-image: url(../src/design/dm-artist.jpg);
   background-position: center top;
 }
 
 #design ul li:nth-child(4) a {
-  background-image: url(../src/design/04.jpg);
+  background-image: url(../src/design/leaders-01.jpg);
   background-position: center 3%;
 }
 
 #design ul li:nth-child(5) a {
-  background-image: url(../src/design/05.jpg);
+  background-image: url(../src/design/leaders-02.jpg);
   background-position: center top;
 }
 
 #design ul li:nth-child(6) a {
-  background-image: url(../src/design/06.jpg);
+  background-image: url(../src/design/leaders-03.jpg);
+  background-position: center 20%;
+}
+
+#design ul li:nth-child(7) a {
+  background-image: url(../src/design/leaders-04.jpg);
+  background-position: center 20%;
+}
+
+#design ul li:nth-child(8) a {
+  background-image: url(../src/design/leaders-05.jpg);
+  background-position: center 20%;
+}
+
+#design ul li:nth-child(9) a {
+  background-image: url(../src/design/leaders-06.jpg);
   background-position: center 20%;
 }
 
