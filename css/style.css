@@ -57,16 +57,29 @@ nav{
   height: 100px;
   display: flex !important;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-nav a{
+nav .logo img{
+  width: 70px;
+}
+
+nav .menu{
+  display: flex;
+}
+
+nav .menu a,
+nav.sub a{
   padding-left: 40px;
 }
 
 nav a span{
   color: #333;
   font-size: 20px;
+}
+
+nav.sub{
+  justify-content: flex-end;
 }
 
 /* --- index --- */
@@ -143,7 +156,7 @@ nav a span{
 }
 
 .container .projects .thumbnail{
-  width: calc(33.3% - 20px);
+  width: calc(50% - 20px);
   height: 300px;
   background-color: #D9D9D9;
   border-radius: 8px;
@@ -245,9 +258,8 @@ nav a span{
 
 .work_box .description{
   width: 100%;
-  padding: 90px 10px;
-  display: flex;
-  justify-content: space-between;
+  padding: 90px 10px 0px;
+  text-align: center;
 }
 
 .work_box .description .name.none{
@@ -265,6 +277,8 @@ nav a span{
 
 .work_box .name{
   display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .work_box .name p{
@@ -279,14 +293,15 @@ nav a span{
 }
 
 .work_box .info{
-  width: 60%;
-}
+  width: 100%;
+} 
 
 .work_box .info p.story{
   font-size: 16px;
   line-height: 22px;
   word-break: keep-all;
   margin-top: 40px;
+  text-align: center;
 }
 
 .work_box .info p.info{
@@ -310,6 +325,44 @@ nav a span{
   width: 100%;
   height: auto;
 }
+
+/* work - dream maker */
+
+.detail .dm{
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.detail .dm p{
+  font-size: 22px;
+}
+
+.detail .dm .mobile{
+  width: 35%;
+  height: 800px;
+  overflow-y: scroll;
+}
+
+.detail .dm .pc{
+  width: 60%;
+  height: auto;
+  padding-left: 20px;
+}
+
+.detail .dm img{
+  width: 100%;
+  display: block;
+}
+
+.detail .dm img.dm_email{
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* work - leaders */
 
 .detail.half{
   display: flex;
