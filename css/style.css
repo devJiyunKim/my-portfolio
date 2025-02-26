@@ -158,7 +158,7 @@ footer p{
   font-size: 28px;
 }
 
-/* --- works --- */
+/* --- works (common) --- */
 
 .container{
   width: 100%;
@@ -279,7 +279,6 @@ footer p{
   padding: 0 15px 15px 0;
 }
 
-/* --- work sub pages --- */
 .back{
   margin-top: 20px;
 }
@@ -423,115 +422,20 @@ footer p{
   height: auto;
 }
 
-/* work - dream maker */
-
-.detail .dm{
-  width: 100%;
-  height: auto;
-  display: flex;
-  margin-bottom: 50px;
-}
-
-.detail .dm p{
-  font-size: 22px;
-}
-
-.detail .dm .mobile{
-  width: 35%;
-  height: 800px;
-  overflow-y: scroll;
-}
-
-.detail .dm .pc{
-  width: 60%;
-  height: auto;
-  padding-left: 20px;
-}
-
-.detail .dm img{
-  width: 100%;
-  display: block;
-}
-
-.detail .dm img.dm_email{
-  max-width: 600px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-/* work - leaders */
-
-.detail.half{
+.detail .img-container{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.detail.half > img{
-  width: 50%;
-}
-
-.detail .styleguide{
-  width: 50%;
-  height: 450px;
-  padding: 100px;
-  /* border: 1px solid #333; */
-}
-
-.detail .styleguide .colors{
+.detail .img-container.singleImg img{
   width: 100%;
+  max-width: 800px;
 }
 
-.detail .styleguide .colors .color-main{
-  width: 100%;
-}
-
-.detail .styleguide .colors .color-main .mint{
+.detail .img-container img{
   width: 50%;
-  height: 70px;
-  background-color: #15BEB9;
-  float: left;
-}
-
-.detail .styleguide .colors .color-main .grey{
-  width: 50%;
-  height: 70px;
-  background-color: #333;
-  float: left;
-}
-
-.detail .styleguide .colors .color-black{
-  width: 100%;
-}
-
-.detail .styleguide .colors .color-black > div{
-  width: calc(100% / 7);
-  height: 70px;
-  float: left;
-  margin-top: 20px;
-}
-
-.detail .styleguide .colors .color-black > div:first-child{
-  background-color: #000;
-}
-.detail .styleguide .colors .color-black > div:nth-child(2){
-  background-color: #333;
-}
-.detail .styleguide .colors .color-black > div:nth-child(3){
-  background-color: #888;
-}
-.detail .styleguide .colors .color-black > div:nth-child(4){
-  background-color: #999;
-}
-.detail .styleguide .colors .color-black > div:nth-child(5){
-  background-color: #aaa;
-}
-.detail .styleguide .colors .color-black > div:nth-child(6){
-  background-color: #ccc;
-}
-.detail .styleguide .colors .color-black > div:nth-child(7){
-  background-color: #fff;
-  border: 1px solid #ccc;
+  max-width: 600px;
+  margin: 0 10px;
 }
 
 .gallery{
@@ -577,6 +481,95 @@ footer p{
   margin: 16px 0;
 }
 
+
+/* work - dreammaker */
+
+.detail .dm{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.detail .dm h6{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 10px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.detail .dm p{
+  font-size: 22px;
+}
+
+.detail .dm .mobile{
+  width: 35%;
+  height: 800px;
+  overflow-y: scroll;
+}
+
+.detail .dm .pc{
+  width: 60%;
+  height: auto;
+  padding-left: 20px;
+}
+
+.detail .dm img{
+  width: 100%;
+  display: block; 
+}
+
+.detail .dm img.dm-mockup{
+  margin-top: 40px;
+}
+
+.detail .img-container img.dm_email{
+  border: 1px solid #ccc;
+}
+
+/* work - leaders trading */
+
+.detail .img-container img.lt_banner{
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 60px;
+}
+
+.detail .img-container img.lt_program{
+  border: 3px solid #212d4f;
+}
+
+.detail .lt-container{
+  background-color: #eee;
+  padding: 60px 0 30px;
+  margin-top: 60px;
+}
+
+.detail .lt-container p{
+  text-align: center;
+  margin-top: 50px;
+  line-height: 24px;
+}
+
+.detail .lt-container a{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.detail .lt-container a p{
+  font-weight: 600;
+  display: inline;
+  margin-top: 0;
+}
+
+.detail .lt-container a svg{
+  width: 18px;
+  height: 18px;
+  margin: 3px 0 0 3px;
+}
 
 /* --- about --- */
 .profile{
