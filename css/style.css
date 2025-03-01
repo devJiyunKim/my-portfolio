@@ -427,6 +427,12 @@ footer p{
   justify-content: center;
 }
 
+.detail .img-container.mockup img{
+  width: 100%;
+  max-width: 1320px;
+  margin: 60px 0;
+}
+
 .detail .img-container.singleImg img{
   width: 100%;
   max-width: 800px;
@@ -482,6 +488,26 @@ footer p{
 }
 
 
+/* work - ticketN Website */
+
+.detail .video-container{
+  background-color:#eee;
+  padding: 60px 0;
+  margin: 40px 0 80px;
+}
+
+.detail .video-container video{
+  margin: 80px 0;
+}
+
+.detail .video-container p{
+  text-align: center;
+  margin-top: 50px;
+  line-height: 24px;
+}
+
+
+
 /* work - dreammaker */
 
 .detail .dm{
@@ -534,7 +560,13 @@ footer p{
 .detail .img-container img.lt_banner{
   width: 100%;
   max-width: 1320px;
-  padding: 0 60px;
+  margin: 0 60px;
+}
+
+.detail .img-container img.lt_laptop{
+  width: 100%;
+  max-width: 1320px;
+  margin: 80px 60px;
 }
 
 .detail .img-container img.lt_program{
@@ -543,8 +575,8 @@ footer p{
 
 .detail .lt-container{
   background-color: #eee;
-  padding: 60px 0 30px;
-  margin-top: 60px;
+  padding: 80px 0 30px;
+  margin: 80px 0 60px;
 }
 
 .detail .lt-container p{
@@ -571,7 +603,11 @@ footer p{
   margin: 3px 0 0 3px;
 }
 
+
+
+
 /* --- about --- */
+
 .profile{
   width: 100%;
   position: absolute;
