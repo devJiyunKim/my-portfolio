@@ -398,7 +398,7 @@ footer p{
   font-size: 16px;
   line-height: 22px;
   word-break: keep-all;
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -417,6 +417,7 @@ footer p{
 
 .detail{
   width: 100%;
+  text-align: center;
 }
 
 .detail > img{
@@ -456,6 +457,12 @@ footer p{
   text-align: center;
   font-weight: 600;
   font-size: 24px;
+  background-color: #212d4f;
+  color: #fff;
+  width: 180px;
+  padding: 10px 0;
+  border-radius: 30px;
+  margin: 0 auto;
 }
 
 .gallery{
@@ -501,6 +508,44 @@ footer p{
   margin: 16px 0;
 }
 
+/* work - ticketN more contents */
+.detail .img-container img.moreContents{
+  max-width: 300px;
+  border: 1px solid #ddd;
+  margin-top: 50px;
+}
+
+.detail .img-container.setlist,
+.detail .img-container.stagePhoto,
+.detail .img-container.map{
+  margin-top: 50px;
+}
+
+.detail .img-container.map{
+  flex-wrap: wrap;
+}
+
+.detail .img-container.map img{
+  width: 100%;
+  max-width: 1200px;
+  display: block;
+  margin: 0 10px 20px;
+}
+
+.detail .example{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.detail .example > p{
+  width: 150px;
+  margin: 0 auto;
+  padding: 8px 12px;
+  border-radius: 20px;
+  color:#212d4f;
+  background-color: #96adec;
+}
 
 /* work - ticketN Website */
 
@@ -519,8 +564,6 @@ footer p{
   margin-top: 50px;
   line-height: 24px;
 }
-
-
 
 /* work - dreammaker */
 
@@ -709,6 +752,10 @@ footer p{
     padding: 0 30px;
   }
 
+  .detail .example.wrap{
+    padding: 0;
+  }
+
   /* about */
   .profile{
     padding: 0 30px;
@@ -796,6 +843,17 @@ footer p{
 
   .work_box .description {
     padding: 60px 10px 0px;
+  }
+
+  .detail .img-container.setlist,
+  .detail .img-container.stagePhoto{
+    flex-wrap: wrap;
+  }
+
+  .detail .img-container.setlist img,
+  .detail .img-container.stagePhoto img {
+    width: 100%;
+    display: block;
   }
 
   .detail .img-container.singleImg img {
@@ -953,8 +1011,8 @@ footer p{
   }
 
   .work_box .info p.story{
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 17px;
   }
 
   .work_box .info p.info{
