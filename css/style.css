@@ -175,7 +175,7 @@ footer p{
 
 .container .projects a.ticketN{
   display: block;
-  background-image: url(./img/ticketn/ticketN_logo_w.png);
+  background-image: url(../img/ticketn/ticketN_logo_w.png);
   background-position: 50% 50%;
   background-size: 150px auto;
   background-repeat: no-repeat;
@@ -184,7 +184,7 @@ footer p{
 
 .container .projects a.ticketN_web{
   display: block;
-  background-image: url(./img/ticketn/ticketN_logo.png);
+  background-image: url(../img/ticketn/ticketN_logo.png);
   background-position: 50% 50%;
   background-size: 150px auto;
   background-repeat: no-repeat;
@@ -193,7 +193,7 @@ footer p{
 
 .container .projects a.dm{
   display: block;
-  background-image: url(./img/dm/dreammaker_logo_B.png);
+  background-image: url(../img/dm/dreammaker_logo_B.png);
   background-position: 50% 50%;
   background-size: 100px auto;
   background-repeat: no-repeat;
@@ -211,7 +211,7 @@ footer p{
 
 .container .projects a.philips{
   display: block;
-  background-image: url(./img/philips/philips_logo.png);
+  background-image: url(../img/philips/philips_logo.png);
   background-position: 50% 50%;
   background-size: 135px auto;
   background-repeat: no-repeat;
