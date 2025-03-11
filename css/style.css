@@ -567,6 +567,10 @@ footer p{
 
 /* work - dreammaker */
 
+.detail .img-container.dm{
+  flex-direction: row;
+}
+
 .detail .dm{
   width: 100%;
   height: auto;
@@ -854,6 +858,16 @@ footer p{
   .detail .img-container.stagePhoto img {
     width: 100%;
     display: block;
+  }
+
+  .detail .img-container.dm{
+    flex-direction: column;
+  }
+
+  .detail .img-container.dm img {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
   }
 
   .detail .img-container.singleImg img {
